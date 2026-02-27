@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class AuthController extends Controller
 {
@@ -26,4 +27,16 @@ class AuthController extends Controller
 
         return response()->json(['token' => $token]);
     }
+
+    // ✅ LOGOUT USER
+    public function logout(Request $request)
+    {
+       auth('api')->logout();
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Successfully logged out'
+        ]);
+    }
+
 }
