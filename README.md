@@ -189,6 +189,6 @@ This project is open-sourced software licensed under the MIT license.
 
 ## 👨‍💻 Author
 
-Developed by **Your Name**
+Developed by Ramandeep Singh
 
 If you like this project, consider giving it a ⭐ on GitHub.
